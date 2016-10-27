@@ -10,7 +10,7 @@ use warnings;
 require Exporter;
 our @ISA       = qw(Exporter);
 our @EXPORT_OK = qw(
-                       detect_getopt_long_script
+                       detect_getopt_long_subcommand_script
                );
 
 our %SPEC;
