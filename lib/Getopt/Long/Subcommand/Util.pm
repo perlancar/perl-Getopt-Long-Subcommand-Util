@@ -41,13 +41,8 @@ _
             pos => 0,
         },
         string => {
-            summary => 'Path to file to be checked',
+            summary => 'String to be checked',
             schema => 'buf*',
-            description => <<'_',
-
-Either `file` or `string` must be specified.
-
-_
         },
         include_noexec => {
             summary => 'Include scripts that do not have +x mode bit set',
