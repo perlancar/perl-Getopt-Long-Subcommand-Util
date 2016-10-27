@@ -37,11 +37,8 @@ _
         filename => {
             summary => 'Path to file to be checked',
             schema => 'str*',
-            description => <<'_',
-
-Either `filename` or `string` must be specified.
-
-_
+            cmdline_aliases => {f=>{}},
+            pos => 0,
         },
         string => {
             summary => 'Path to file to be checked',
@@ -57,6 +54,9 @@ _
             schema  => 'bool*',
             default => 1,
         },
+    },
+    args_rels => {
+        req_one => ['filename', 'string'],
     },
 };
 sub detect_getopt_long_subcommand_script {
